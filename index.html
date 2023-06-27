@@ -33,9 +33,12 @@
 
 <body>
     <div id="app" class="container text-center mt-5">
-        <ul class="list-unstyled">
-            <li v-for="mail in mails">{{mail}}</li>
-        </ul>
+        <div v-if="mails.length === items">
+
+            <ul class="list-unstyled">
+                <li v-for="mail in mails">{{mail}}</li>
+            </ul>
+        </div>
 
 
     </div>
